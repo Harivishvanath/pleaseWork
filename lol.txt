@@ -1,0 +1,843 @@
+
+
+
+DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING
+
+LABORATORY RECORD
+
+(Project Based Learning)
+
+
+
+
+
+
+
+
+
+
+NAME	:
+
+REGISTER NO.	:
+
+ACADEMIC YEAR / SEM	:	2024 - 2025 / VII
+
+
+
+BONAFIDE CERTIFICATE
+
+
+Name
+
+
+Reg. No.
+
+
+Branch
+
+
+Semester
+
+
+Year/Section
+
+
+Course code/
+Title
+
+
+
+
+
+Certified that this is a bonafide record of work done by the above student, in the “Cloud Computing” Laboratory during the academic year 2024-2025.
+
+
+
+
+Course Instructor	HoD
+
+
+Submitted for the End Semester PracticSal Examination on .................…
+
+INDEX
+
+
+
+S.No.
+
+DATE
+
+TITLE OF THE EXPERIMENT
+
+PAGE NO.
+
+MARK
+
+SIGN
+1
+
+
+Create virtual machine with different flavors
+of linux or windows OS on top of windows10 or11.
+1
+
+
+
+
+2
+
+
+Develop a procedure to transfer the files from one virtual machine to another virtual machine.
+6
+
+
+
+
+3
+
+
+Installation of Docker from Dockerhub and creating Containers using Dockers and uploading the containers in cloud.
+8
+
+
+
+
+4
+
+
+Build a Docker image and publish in cloud.
+13
+
+
+
+
+5
+
+
+Develop a procedure to create a Secure cloud.
+17
+
+
+
+
+6
+
+
+Develop a procedure to install storage controller and interact with it.
+22
+
+
+
+
+7
+
+
+Develop a procedure create a one node cluster.
+27
+
+
+
+
+8
+
+
+Write a word count program to demonstrate the use of Map and Reduce tasks.
+33
+
+
+
+
+
+
+
+EX NO : 1. CREATE VIRTUAL MACHINE WITH DIFFERENT FLAVORS OF LINUX OR WINDOWS OS ON TOP OF WINDOWS10 OR 11.
+
+
+AIM:
+
+To Install & Create a virtual machine using VMware Software.
+
+PROCEDURE:
+
+Create a new virtual machine.
+Customize the virtual machine by specifying the hardware configuration.
+Allocate memory for virtual machine
+Select the ISO image of the OS to be installed and proceed.
+
+OUTPUT:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Result:
+Thus the virtual machine is created using VMware and windows XP OS is installed in thevirtual machine.
+
+EX NO :2 . FIND A PROCEDURE TO TRANSFER THE FILES FROM ONE VIRTUAL MACHINE TO ANOTHER VIRTUALMACHINE
+
+AIM:
+
+To share files between physical machine and virtual machine.
+
+PROCEDURE:
+
+Open a virtual machine.
+Select a file which is to be shared in the machine.
+Select a already existing file for sharing or create a new file for sharing.
+Open VMware workstation and go to VM tab and click install VMware tools.
+Open a virtual machine to which the file has to shared and power on.
+Goto settings of the virtual machine.
+In VM Settings go to options.
+Select the “shared folder” option
+Enable the shared folder option by selecting “always enable” , check “Map as a networkdrive in windows path” and click add and click next.
+Select the path of the shared folder from the host and press ok and then next.
+Specify the attributes of shared folder, click finish and then ok.
+GotoMyComputer and click refresh to see the shared folder.
+Check for shareability.
+Goto Host Machine open the file and check for updation.
+Make some changes in the file in host machine and check for the updation in the virtual machine.
+
+OUTPUT:
+
+In Host Machine:
+
+
+
+
+In Virtual Machine:
+
+
+
+
+
+
+
+
+
+
+
+
+Result:
+
+Thus the file is shared between physical and virtual machine.
+
+EX NO : 3. INSTALLATION OF DOCKER FROM DOCKERHUB AND CREATING CONTAINERS USING DOCKERS AND UPLOADING THE CONTAINERS IN CLOUD.
+
+
+AIM:
+Installation of Docker from Dockerhub and creating Containers using Dockers and uploading the containers in cloud.
+
+PROCEDURE:
+
+Installing Docker
+
+
+Create DockerHub Account
+Visit hub.docker.com
+Sign up for a new account
+Verify email address
+
+Login to DockerHub via CLI
+
+
+
+
+Create Sample Application
+
+
+Create Dockerfile
+
+
+
+Build and Run Container
+
+
+
+
+Tag and Push to DockerHub
+
+
+
+
+
+OUTPUT:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RESULT:
+
+Docker from Dockerhub is Installed and Containers using Dockers and uploading the containers in cloud is created.
+
+EX NO : 4. BUILD A DOCKER IMAGE AND PUBLISH IN CLOUD.
+
+AIM:
+
+To build a Docker image and publish in cloud.
+
+
+PROCEDURE:
+
+
+Prerequisites Setup
+Install Docker Desktop on the local machine
+Create an account on a cloud platform (e.g., Docker Hub)
+Login to Docker Hub using CLI:
+
+
+Create Application Files
+Create a new directory for the project:
+
+
+Create a simple application (e.g., Python web app)
+
+
+
+- Create requirements file:
+
+
+Create Dockerfile
+
+
+
+
+Build Docker Image
+
+
+
+Test Locally
+
+
+Push to Cloud Registry
+
+
+
+OUTPUT:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RESULT:
+
+Thus a Docker image is built and published in cloud.
+
+EX NO :5 . DEVELOP A PROCEDURE TO CREATE A SECURE CLOUD.
+
+
+AIM:
+To install a open nebula and to create a virtual machine.
+
+
+
+PROCEDURE:
+Open-nebula offers a simple but feature-rich and flexible solution to build and manage enterprise clouds and virtualized data centers.
+OpenNebula is designed to be simple.
+
+Simple to install, update and operate by the admins, and simple to use by end users.
+
+OUTPUT:
+
+
+grep -E 'svm|vmx' /proc/cpuinfo
+Package Layout
+opennebula-common: Provides the user and common files
+libopennebula-ruby: All ruby libraries opennebula-node: Prepares a node as anopennebula-node
+opennebula-sunstone:
+OpenNebula Sunstone Web Interface
+opennebula-tools: Command Line interface
+opennebula-gate: Gate server that enables communication between VMs and OpenNebula
+opennebula-flow: Manages services and elasticity
+opennebula: OpenNebula Daemon
+
+
+Step 1. Installation in the Frontend
+Add the repository
+> /etc/apt/sources.list.d/opennebula.list
+Install the required packages
+Configure and start the services
+There are two main processes that must be started, the main OpenNebuladaemon: oned, and thegraphical user interface: sunstone.
+Sunstone listens only in the loopback interface by default for securityreasons. To change itedit
+/etc/one/sunstone-server.conf and change :host: 127.0.0.1 to
+:host: 0.0.0.0.The command to restart theSunstone:
+
+Configure Network File Service (NFS) (This is not needed if both Frontend andNodes are in the
+
+
+samemachine)
+
+Export /var/lib/one/ from the frontend to the worker nodes. To do so addthe following tothe
+/etc/exports file in the frontend:
+
+Refresh the NFS export by the following command
+
+Configure SSH public key
+
+Add the following snippet to ~/.ssh/config so it doesn’t prompt to add the keys to the
+known_hosts file:.
+Step 2. Installation in the Nodes
+Install the required packages
+Configure the network
+In DHCP, edit /etc/network/interfaces auto lo iface lo inet loopbackautobr0
+iface br0 inet dhcpbridge_ports eth0bridge_fd9 bridge_hello 2
+bridge_maxage 12bridge_stpoff
+Restart the network
+Configure NFS (This is not needed if both Frontend and Nodes are inthe same machine)edit the file /etc/fstab as
+
+<Frontend IP>:/var/lib/one/ /var/lib/one/ nfs soft,intr,rsize=8192,wsize=8192,noauto Mount the NFS
+sudo mount /var/lib/one
+
+Configure Qemuoneadmin user must be able to manage libvirt as root # cat << EOT >
+/etc/libvirt/qemu.confuser ="oneadmin"
+group = "oneadmin" dynamic_ownership = 0EOT
+
+
+Restart libvirt
+
+sudo service libvirt-bin restart
+
+Step 3: Start the sunstone from the web browser
+oneadmin password is available in the file ~/.one/one_auth
+
+From the command line, to login as oneadmin in the Frontend , execute
+Adding Host
+To start running VMs, you should first register a worker node forOpenNebula
+onehost create localhost -i kvm -v kvm -n dummy
+Run onehost list - Try these command until it's on. If there is any failure, look at
+/var/log/one/oned.log
+Adding Virtual resources
+
+To create networks, create a network template file "mynetwork.one" and
+
+
+edit the file as follows
+Create resources in opennebula
+
+
+Monitor the resources are created by running the command oneimage list
+In order to dynamically add ssh keys to Virtual Machines we must add
+
+
+
+our ssh key to the user template,by editing the user
+
+
+template:Add a new line to the template (cat ~/.ssh/id_dsa.pub)
+
+To run a virtual machine
+
+$ onetemplate instantiate "Centos-6.5" --name "My Scratch VM"
+To test, execute onevm list , VM going from Pending to Prolog to Running. If it fails,check the log as
+/var/log/one/<VM_ID>/vm.log
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Result:
+
+Thus open nebula is installed and created a virtual machine successfully.
+
+EX NO :6 . DEVELOP A PROCEDURE TO INSTALL STORAGE CONTROLLER AND INTERACT WITH IT.
+
+
+AIM:
+To install a Network Storage Controller.
+
+PROCEDURE:
+Create a virtual machine.
+Configure the virtual machine.
+Select the ISO image of the OS to be installed and proceed.
+
+OUTPUT:
+Open the Virtual Machine Software
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RESULT :
+Thus the storage controller installation was done successfully
+
+EX NO :7 . DEVELOP A PROCEDURE CREATE A ONE NODE CLUSTER.
+
+
+AIM:
+To mount the one node Hadoop cluster using FUSE and access files on HDFS in the same way as we do on Linux operating systems.
+
+
+PROCEDURE:
+
+FUSE (Filesystem in Userspace) enables you to write a normal user application as a bridge for a traditional filesystem interface.
+The hadoop-hdfs-fuse package enables you to use your HDFS cluster as if it were a traditional filesystem on Linux. It is assumed that you have a working HDFS cluster and know the hostname and port that your NameNode exposes.
+To install fuse-dfs on Ubuntu systems:
+hdpuser@jiju-PC:~$	wget	http://archive.cloudera.com/cdh5/one-click- install/trusty/amd64/cdh5-repository_1.0_all.deb
+--2016-07-24 09:10:33-- http://archive.cloudera.com/cdh5/one-click-install/trusty/amd64/cdh5- repository_1.0_all.deb
+Resolving archive.cloudera.com (archive.cloudera.com)... 151.101.8.167
+
+
+Connecting to archive.cloudera.com (archive.cloudera.com)|151.101.8.167|:80... connected. HTTP request sent, awaiting response... 200 OK
+Length: 3508 (3.4K) [application/x-debian-package] Saving to: ‘cdh5-repository_1.0_all.deb’ 100%[======================================>] 3,508 --.-K/s in 0.09s
+
+2016-07-24 09:10:34 (37.4 KB/s) - ‘cdh5-repository_1.0_all.deb’ saved [3508/3508] hdpuser@jiju- PC:~$ sudo dpkg -i cdh5-repository_1.0_all.deb
+
+
+Selecting previously unselected package cdh5-repository.
+
+
+(Reading database ... 170607 files and directories currently installed.) Preparing to unpack cdh5- repository_1.0_all.deb ...
+Unpacking cdh5-repository (1.0) ... Setting up cdh5-repository (1.0) ... gpg: keyring `/etc/apt/secring.gpg' created
+gpg: keyring `/etc/apt/trusted.gpg.d/cloudera-cdh5.gpg' created
+gpg: key 02A818DD: public key "Cloudera Apt Repository" imported gpg: Total number processed: 1
+gpg: imported: 1
+hdpuser@jiju-PC:~$ sudo apt-get update
+hdpuser@jiju-PC:~$ sudo apt-get install hadoop-hdfs-fuse
+
+Reading package lists... Done Building dependency tree Reading state information... Done The following extra packages will be installed:
+avro-libs bigtop-jsvc bigtop-utils curl hadoop hadoop-0.20-mapreduce hadoop-client hadoop-hdfs hadoop-mapreduce hadoop-yarn libcurl3 libhdfs0 parquet parquet-format zookeeper
+The following NEW packages will be installed:
+
+
+avro-libs bigtop-jsvc bigtop-utils curl hadoop hadoop-0.20-mapreduce hadoop-client hadoop-hdfs hadoop-hdfs-fuse hadoop-mapreduce hadoop-yarn libhdfs0 parquet parquet-format zookeeper
+The following packages will be upgraded:
+
+
+libcurl3
+1 upgraded, 15 newly installed, 0 to remove and 702 not upgraded. Need to get 222 MB of archives.
+After this operation, 267 MB of additional disk space will be used. Do you want to continue? [Y/n] Y
+Get:1	http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main	libcurl3	amd64 7.35.0- 1ubuntu2.7 [173 kB]
+Get:2 https://archive.cloudera.com/cdh5/ubuntu/trusty/amd64/cdh/ trusty-cdh5/contrib avro-libs all 1.7.6+cdh5.8.0+112-1.cdh5.8.0.p0.74~trusty-cdh5.8.0 [47.0 MB]
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main curl amd64 7.35.0-1ubuntu2.7 [123 kB]
+Get:4 https://archive.cloudera.com/cdh5/ubuntu/trusty/amd64/cdh/ trusty-cdh5/contrib parquet- format all 2.1.0+cdh5.8.0+12-1.cdh5.8.0.p0.70~trusty-cdh5.8.0 [479 kB]
+Get:5 https://archive.cloudera.com/cdh5/ubuntu/trusty/amd64/cdh/ trusty-cdh5/contrib parquet all 1.5.0+cdh5.8.0+174-1.cdh5.8.0.p0.71~trusty-cdh5.8.0 [27.1 MB]
+Get:6 https://archive.cloudera.com/cdh5/ubuntu/trusty/amd64/cdh/ trusty-cdh5/contrib hadoop all 2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0 [28.2 MB]
+Get:7 https://archive.cloudera.com/cdh5/ubuntu/trusty/amd64/cdh/ trusty-cdh5/contrib libhdfs0 amd64 2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0 [320 kB]
+Get:8 https://archive.cloudera.com/cdh5/ubuntu/trusty/amd64/cdh/ trusty-cdh5/contrib hadoop- hdfs-fuse amd64 2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0 [317 kB]
+Fetched 222 MB in 3min 28s (1,064 kB/s)
+(Reading database ... 170612 files and directories currently installed.) Preparing to unpack .../libcurl3_7.35.0-1ubuntu2.7_amd64.deb ...
+Unpacking libcurl3:amd64 (7.35.0-1ubuntu2.7) over (7.35.0-1ubuntu2) ... Selecting previously unselected package curl.
+Preparing to unpack .../curl_7.35.0-1ubuntu2.7_amd64.deb ... Unpacking curl (7.35.0-1ubuntu2.7) ... Selecting previously unselected package avro-libs.
+Preparing to unpack .../avro-libs_1.7.6+cdh5.8.0+112-1.cdh5.8.0.p0.74~trusty-cdh5.8.0_all.deb
+...
+
+Unpacking avro-libs (1.7.6+cdh5.8.0+112-1.cdh5.8.0.p0.74~trusty-cdh5.8.0) ... Selecting previously unselected package bigtop-utils.
+Preparing to unpack .../bigtop-utils_0.7.0+cdh5.8.0+0-1.cdh5.8.0.p0.72~trusty-cdh5.8.0_all.deb
+
+
+...
+Unpacking bigtop-utils (0.7.0+cdh5.8.0+0-1.cdh5.8.0.p0.72~trusty-cdh5.8.0) ... Selecting previously unselected package bigtop-jsvc.
+Preparing to	unpack.../bigtop-jsvc_0.6.0+cdh5.8.0+847-1.cdh5.8.0.p0.74~trusty- cdh5.8.0_amd64.deb ...
+Unpacking bigtop-jsvc (0.6.0+cdh5.8.0+847-1.cdh5.8.0.p0.74~trusty-cdh5.8.0) ... Selecting previously unselected package zookeeper.
+Preparing to unpack .../zookeeper_3.4.5+cdh5.8.0+94-1.cdh5.8.0.p0.76~trusty-cdh5.8.0_all.deb
+...
+Unpacking zookeeper (3.4.5+cdh5.8.0+94-1.cdh5.8.0.p0.76~trusty-cdh5.8.0) ... Selecting previously unselected package parquet-format.
+Preparing to	unpack.../parquet-format_2.1.0+cdh5.8.0+12-1.cdh5.8.0.p0.70~trusty- cdh5.8.0_all.deb ...
+Unpacking parquet-format (2.1.0+cdh5.8.0+12-1.cdh5.8.0.p0.70~trusty-cdh5.8.0) ... Selecting previously unselected package hadoop-yarn.
+Preparing to	unpack.../hadoop-yarn_2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty- cdh5.8.0_all.deb ...
+Unpacking hadoop-yarn (2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0) ... Selecting previously unselected package hadoop-mapreduce.
+Preparing to	unpack.../hadoop-mapreduce_2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty- cdh5.8.0_all.deb ...
+Unpacking hadoop-mapreduce (2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0) ... Selecting previously unselected package hadoop-hdfs.
+Preparing to	unpack.../hadoop-hdfs_2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty- cdh5.8.0_all.deb ...
+Unpacking hadoop-hdfs (2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0) ... Selecting previously unselected package hadoop-0.20-mapreduce.
+Preparing to unpack .../hadoop-0.20-mapreduce_2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty- cdh5.8.0_amd64.deb ...
+Unpacking hadoop-0.20-mapreduce (2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0) ... Selecting previously unselected package hadoop-client.
+Preparing to	unpack.../hadoop-client_2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty- cdh5.8.0_all.deb ...
+Unpacking hadoop-client (2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0) ... Selecting previously unselected package parquet.
+Preparing to unpack .../parquet_1.5.0+cdh5.8.0+174-1.cdh5.8.0.p0.71~trusty-cdh5.8.0_all.deb ... Unpacking parquet (1.5.0+cdh5.8.0+174-1.cdh5.8.0.p0.71~trusty-cdh5.8.0) ...
+
+Selecting previously unselected package hadoop.
+Preparing to unpack .../hadoop_2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0_all.deb
+...
+Unpacking hadoop (2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0) ... Selecting previously unselected package libhdfs0.
+
+
+Preparing to	unpack.../libhdfs0_2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty- cdh5.8.0_amd64.deb ...
+Unpacking libhdfs0 (2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0) ... Selecting previously unselected package hadoop-hdfs-fuse.
+Preparing to	unpack.../hadoop-hdfs-fuse_2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty- cdh5.8.0_amd64.deb ...
+Unpacking hadoop-hdfs-fuse (2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0) ... Processing triggers for man-db (2.6.7.1-1) ...
+Setting up libcurl3:amd64 (7.35.0-1ubuntu2.7) ... Setting up curl (7.35.0- 1ubuntu2.7) ...
+Setting up avro-libs (1.7.6+cdh5.8.0+112-1.cdh5.8.0.p0.74~trusty-cdh5.8.0) ... Setting up bigtop- utils (0.7.0+cdh5.8.0+0-1.cdh5.8.0.p0.72~trusty-cdh5.8.0) ... Setting up bigtop-jsvc (0.6.0+cdh5.8.0+847-1.cdh5.8.0.p0.74~trusty-cdh5.8.0) ... Setting up zookeeper (3.4.5+cdh5.8.0+94-1.cdh5.8.0.p0.76~trusty-cdh5.8.0) ...
+update-alternatives: using /etc/zookeeper/conf.dist to provide /etc/zookeeper/conf (zookeeper- conf) in auto mode
+Setting up parquet-format (2.1.0+cdh5.8.0+12-1.cdh5.8.0.p0.70~trusty-cdh5.8.0) ... Setting up parquet (1.5.0+cdh5.8.0+174-1.cdh5.8.0.p0.71~trusty-cdh5.8.0) ...
+Setting up hadoop (2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0) ...
+update-alternatives: using /etc/hadoop/conf.empty to provide /etc/hadoop/conf (hadoop-conf) in auto mode
+Setting up hadoop-yarn (2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0) ... Setting up libhdfs0 (2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0) ...
+Setting up hadoop-mapreduce (2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0) ... Setting up hadoop-hdfs (2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0) ...
+Setting up hadoop-0.20-mapreduce (2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0) ... Setting up hadoop-client (2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0) ...
+Setting up hadoop-hdfs-fuse (2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty-cdh5.8.0) ... Processing triggers for libc-bin (2.19-0ubuntu6) ...
+hdpuser@jiju-PC:~$ sudo mkdir -p /home/hdpuser/hdfs [sudo] password for hdpuser:
+hdpuser@jiju-PC:~$ sudo hadoop-fuse-dfs dfs://localhost:54310 /home/hdpuser/hdfs/
+INFO /data/jenkins/workspace/generic-package-ubuntu64-14-04/CDH5.8.0-Packaging-Hadoop- 2016-07-12_15-43-10/hadoop-2.6.0+cdh5.8.0+1601-1.cdh5.8.0.p0.93~trusty/hadoop-hdfs- project/hadoop-hdfs/src/main/native/fuse-dfs/fuse_options.c:164	Adding	FUSE arg
+/home/hdpuser/hdfs/
+
+hdpuser@jiju-PC:~$ ls /home/hdpuser/hdfs/ hdpuser@jiju-PC:~$ mkdir /home/hdpuser/hdfs/new hdpuser@jiju-PC:~$ ls /home/hdpuser/hdfs/
+new
+hdpuser@jiju-PC:~$ mkdir /home/hdpuser/hdfs/example hdpuser@jiju-PC:~$ ls -l /home/hdpuser/hdfs/total 8
+
+drwxr-xr-x 2 hdpuser 99 4096 Jul 24 15:28 example
+drwxr-xr-x 2 hdpuser 99 4096 Jul 24 15:19 new
+
+
+
+
+
+To Unmont the file system
+Using umount command the filesystem can be unmounted.hdpuser@jiju-PC:~$ sudo umount
+/home/hdpuser/hdfs
+NOTE: You can now add a permanent HDFS mount which persists through reboots.
+
+
+To add a system mount:
+
+
+Open /etc/fstab and add lines to the bottom similar to these: (sudo vi /etc/fstab)
+hadoop-fuse-dfs#dfs://<name_node_hostname>:<namenode_port><mount_point>	fuse allow_other,usetrash,rw 2 0
+
+
+
+
+
+For example:
+Sudo hadoop-fuse-dfs#dfs://localhost:54310/home/hdpuser/hdfs
+Test to make sure everything is working properly:
+$ mount <mount_point>
+hdpuser@jiju-PC:~$ sudo mount /home/hdpuser/hdfs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Result:
+Thus fuse has been installed successfully.
+
+EX NO :8 . WRITE A WORD COUNT PROGRAM TO DEMONSTRATE THE USE OF MAP AND REDUCE TASKS
+
+
+AIM:
+
+To write a java program to count number of words in a file using map reduce concept.
+
+PROCEDURE:
+
+Open eclipse
+File> new> java project
+Libraries>add external jars..
+File system>usr> lib>hadoop> select all jar files
+Click ok
+Again add external jars.
+File system >client>select all jar files >click ok
+Click finish
+Rightclickwordcount> new> class
+Wordcount>src> default package > wordcount.java
+Run the wordcount java program
+Rightclickwordcount> export
+Open command prompt
+
+
+PROGRAM :
+import java.io.IOException; import java.util.StringTokenizer; import org.apache.hadoop.conf.Configuration;
+
+import org.apache.hadoop.fs.Path; import org.apache.hadoop.io.IntWritable; import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Job; import org.apache.hadoop.mapreduce.Mapper; im
